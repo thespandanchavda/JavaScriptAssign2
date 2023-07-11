@@ -1,0 +1,21 @@
+/* Apply grayscale filter to inactive thumbnails */
+#gallery ul li img:not(.active) {
+    filter: grayscale(100%);
+  }
+  
+  /* Remove grayscale filter from active thumbnail */
+  #gallery ul li img.active {
+    filter: none;
+  }
+  /* Set the display property of list items to inline-block */
+#gallery ul li {
+    display: inline-block;
+    margin-right: 10px; /* Add some spacing between images */
+  }
+  
+  /* Remove the default list styles */
+  #gallery ul {
+    list-style: none;
+  }
+  
+  
